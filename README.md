@@ -6,7 +6,7 @@ This project extends the original **VR-Vibrotactile-Haptics** repository by adap
 
 The system is intended for immersive robotic teleoperation scenarios, where the user interacts with virtual or remote objects and receives tactile information about contact, roughness, smoothness, and surface relief.
 
-![Immersive robotic teleoperation context](Images/teleoperation_context.png)
+![Immersive robotic teleoperation context](Images/teleoperation_context.jpg)
 
 ---
 

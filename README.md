@@ -143,7 +143,7 @@ If the `OS: Windows` option does not appear, make sure that the DLL is inside a 
 
 Example Unity configuration:
 
-![openvr\_api.dll Unity import settings](Images/openvr_api_dll_unity.png)
+![openvr\_api.dll Unity import settings](Images/openvr_api.png)
 
 After modifying the import settings, press:
 
@@ -359,8 +359,6 @@ To use or modify this project, the following elements are recommended:
 7. A microcontroller or wireless communication module capable of receiving PWM values.
 8. Serial or RF communication between Unity and the glove hardware.
 9. The native OpenVR library `openvr_api.dll` correctly placed and configured for Windows x86_64.
-
-![Unity and haptic glove architecture](Images/openvr_api.png)
 
 ---
 

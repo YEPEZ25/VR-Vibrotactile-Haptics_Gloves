@@ -45,6 +45,13 @@ namespace Valve.VR
 
         public static void Update()
         {
+#if UNITY_2019_3_OR_NEWER
+            // Unity 2019.3+ uses XR Plug-in Management/OpenXR instead of the old Legacy VR SDK list.
+            // The UnityEditorInternal.VR.VREditor.GetVREnabledDevicesOnTargetGroup API is not available
+            // in recent Unity versions such as 2022.3, so this legacy auto-enabler must be skipped.
+            UnityEditor.EditorApplication.update -= Update;
+            return;
+#else
             if (SteamVR_Settings.instance.autoEnableVR)
             {
                 bool enabledVR = false;
@@ -226,6 +233,7 @@ namespace Valve.VR
                 UnityEditor.EditorApplication.update -= Update;
 #endif
             }
+#endif
         }
     }
 }
